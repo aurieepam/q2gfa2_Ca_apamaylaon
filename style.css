@@ -14,7 +14,7 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 1.5vw;
-    background-color: rgba(39, 7, 65, 0.815);
+    background-color: rgba(39, 1, 70, 0.486);
     z-index: 3;
     position: relative;
 
@@ -29,17 +29,22 @@ nav{
     position: relative;
 }
 
+.links a{
+    margin-left: 1vw;
+}
+
 .banner {
     position: relative;
     margin-top: 25vh;
-    background-color: rgba(39, 7, 65, 0.815);
+    background-color: rgba(68, 0, 124, 0.486);
     padding: 5vw;
     z-index: 2;
+    
 }
 
 .bannerhead{
     font-size: 30pt;
-    font-weight: 400;
+    font-weight: 800;
     font-family: 'AlphaCentauri', sans-serif;
     color: white;
     text-align: center;
@@ -61,11 +66,11 @@ nav{
 
 @keyframes galaxyOrbit {
     0%{
-        transform: rotate(0deg) scale(0.5);
+        transform: rotate(0deg) scale(1);
     }
 
     100%{
-        transform: rotate(360deg) scale(1);
+        transform: rotate(360deg) scale(0.5);
     }
 
 }
@@ -94,25 +99,25 @@ nav{
 }
 
 .iceworld{
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     background: url(media/iceworld.gif);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     margin-left: 1vw;
-    margin-top: 1vh;
-    animation: IWorbit 5s linear infinite;
+    margin-top: 10vh;
+    animation: IWorbit 7s linear infinite;
     z-index: 1;
 }
 
 @keyframes IWorbit{
     from{
-        transform: rotate(0deg) translateX(250px);
+        transform: rotate(0deg) translateX(200px);
     }
 
     to{
-        transform: rotate(360deg) translateX(250px);
+        transform: rotate(360deg) translateX(200px);
     }
 
 }
@@ -136,5 +141,31 @@ nav{
 
     100%{
         transform:scale(10) translateY(80vh);
+    }
+}
+
+.star2{
+    height: 120px;
+    width: 120px;
+    background: url(media/star2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: S2orbit 1s linear infinite;
+    margin-top: -55vh;
+    margin-left: 5vw;
+}
+
+@keyframes S2orbit{
+    0%{
+        transform:scale(0.5);
+    }
+
+    50%{
+        transform:scale(1.5);
+    }
+
+    100%{
+        transform:scale(0.5);
     }
 }
