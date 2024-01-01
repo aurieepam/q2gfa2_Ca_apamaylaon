@@ -1,0 +1,140 @@
+@import url('https://fonts.cdnfonts.com/css/alphacentauri');
+
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(media/bg.gif);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5vw;
+    background-color: rgba(39, 7, 65, 0.815);
+    z-index: 3;
+    position: relative;
+
+}
+
+.pagetitle, .links a{
+    font-family: 'AlphaCentauri', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 13pt;
+    z-index: 3;
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    margin-top: 25vh;
+    background-color: rgba(39, 7, 65, 0.815);
+    padding: 5vw;
+    z-index: 2;
+}
+
+.bannerhead{
+    font-size: 30pt;
+    font-weight: 400;
+    font-family: 'AlphaCentauri', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.galaxy{
+    height: 400px;
+    width: 400px;
+    background: url(media/galaxy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: -48vh;
+    animation: galaxyOrbit 20s linear infinite;
+    z-index: 1;
+}
+
+@keyframes galaxyOrbit {
+    0%{
+        transform: rotate(0deg) scale(0.5);
+    }
+
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+
+}
+.gasgiant{
+    height: 220px;
+    width: 220px;
+    background: url(media/gasgiant.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -30vh;
+    animation: GGorbit 18s linear infinite;
+    z-index: 1;
+}
+
+@keyframes GGorbit {
+    from{
+        transform: rotate(0deg) translateX(270px);
+    }
+
+    to{
+        transform: rotate(360deg) translateX(270px);
+    }
+
+}
+
+.iceworld{
+    height: 100px;
+    width: 100px;
+    background: url(media/iceworld.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    animation: IWorbit 5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes IWorbit{
+    from{
+        transform: rotate(0deg) translateX(250px);
+    }
+
+    to{
+        transform: rotate(360deg) translateX(250px);
+    }
+
+}
+
+.star{
+    height: 150px;
+    width: 150px;
+    background: url(media/star.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: Sorbit 4s linear infinite;
+    margin-top: -75vh;
+    margin-left: 85vw;
+}
+
+@keyframes Sorbit{
+    0%{
+        transform:scale(0.5);
+    }
+
+    100%{
+        transform:scale(10) translateY(80vh);
+    }
+}
